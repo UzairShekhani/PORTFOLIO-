@@ -49,6 +49,7 @@ body {
 .navbar {
   position: relative;
 }
+
 .navbar a {
   font-size: 1.7rem;
   color: var(--text-color);
@@ -537,7 +538,7 @@ span {
   color: var(--main-color);
 }
 
-.animate {
+/* .animate {
   position: absolute;
   top: 0;
   right: 0;
@@ -545,22 +546,21 @@ span {
   height: 100%;
   background: yellowgreen;
   z-index: 98;
-}
+} */
 .logo .animate,
 .navbar .animate,
 #menu-icon .animate,
 .home.show-animate .animate {
   animation: showRight 1s ease forwards;
-  animation-delay: calc(0.3s * var(--i));
+  
 }
 .animate.scroll {
   transition: 1s ease;
-  transition-delay: calc(0.3s / var(--i));
+  
   animation: none;
 }
 .about.show-animate .animate.scroll,
 .education.show-animate .animate.scroll {
-  transition-delay: calc(0.3s * var(--i));
   width: 0;
 }
 
